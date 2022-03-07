@@ -1,0 +1,7 @@
+<hello name="{{ name }}"></hello>
+<form [formGroup]="form">
+  <label for="">Name:</label> <input type="text" formControlName="name" />
+  <app-child [form]="addressForm"></app-child>
+
+  {{ form.value | json }}
+</form>
